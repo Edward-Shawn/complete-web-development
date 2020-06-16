@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/배경크기조절.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="center">
+            <header>
+
+               
+            </header>
+        </div>
+
+        <section class="main_img">
+
+        </section>
+        <section></section>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main_img").height($(window).width()*0.35);
+
+            $(window).resize(function(){
+                var winWidth = $(window).width()*0.35;
+                $(".main_img").height(winWidth);
+            });
+
+        });
+    </script>
+</body>
+</html>

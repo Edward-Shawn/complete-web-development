@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    width: 100%;
+    height: auto;
+}
+
+.center{
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: gray;
+}
+
+.main_img{
+    width: 100%;
+    
+    background: url(../img/49091.jpg) no-repeat center;
+}
