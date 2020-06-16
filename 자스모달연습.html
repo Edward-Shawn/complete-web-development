@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/자스레이아웃연습.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <div class="modal">
+        <div class="myModal">
+            <span id="close">&times;</span>
+            <p>I love seo ho</p>
+        </div>
+    </div>
+    <script>
+       
+        var btn = document.querySelector('#btn');
+        var modal = document.querySelector('.modal');
+        var close = document.querySelector('#close');
+
+            btn.onclick = function(){
+                modal.style.display = "block";
+            };
+
+            close.onclick = function(){
+                modal.style.display = "none";
+            }
+
+
+    </script>
+</body>
+</html>
