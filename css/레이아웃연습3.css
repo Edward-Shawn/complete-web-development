@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-ul ol{
+ul, ol{
     list-style: none;
 }
 a{
@@ -26,7 +26,29 @@ header{
     top: 50px;
     width: 100%;
     height: 100px;
-    background: black;
+    background: rgb(48, 47, 47);
+}
+
+.gnb{
+    float: right;
+}
+.gnb li{
+    float: left;
+}
+.gnb li a{
+    line-height: 100px;
+    font-size: 30px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+.scroll{
+    max-width: 1000px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 .main_img{
@@ -36,7 +58,7 @@ header{
 
 .page1{ 
     width: 100%;
-    height: 300px;
+    height: 600px;
     background: rgb(192, 192, 192);
 }
 
@@ -72,7 +94,7 @@ header{
 
 .page2{
     width: 100%;
-    height: 500px;
+    height: 800px;
     background: rgb(190, 247, 225);
 }
 
@@ -87,6 +109,6 @@ header{
 
 footer{
     width: 100%;
-    height: 100px;
+    height: 500px;
     background: ghostwhite;  
 }
