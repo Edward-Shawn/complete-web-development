@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none;}
+
+header{width: 100%; height: 50px; background: rgba(128, 128, 128, 0.486);}
+
+.gnb{text-align: center;}
+.gnb li{display: inline-block; line-height: 50px; cursor: pointer;}
+.gnb li.on{background: white;}
+
+
+.page1{width: 100%; height: 500px; background: rgb(103, 155, 103);}
+.page2{width: 100%; height: 500px; background: rgb(179, 150, 233);}
+.page3{width: 100%; height: 500px; background: rgb(103, 120, 155);}
