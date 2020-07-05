@@ -1,0 +1,15 @@
+/* reset */
+*{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none;}
+
+
+header{height: 50px; width: 100%; background: rgba(116, 114, 114, 0.466);}
+.gnb{text-align: center;}
+.gnb li{display: inline-block; line-height: 50px; background: white; padding:0 20px;}
+.gnb li.on{background: skyblue;}
+
+.page1{width: 100%; height: 100vh; background: skyblue;}
+.page2{width: 100%; height: 100vh; background: rgb(84, 135, 155);}
+.page3{width: 100%; height: 100vh; background: rgb(41, 87, 105);}
+
