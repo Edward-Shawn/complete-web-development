@@ -11,7 +11,7 @@
 
 <div class="wrap">
     <div class="menu">
-            <div class="logo"><img src="/img/pngwing.com.png"><h1>Origin</h1></div>
+            <div class="logo"><img src="img/pngwing.com.png"><h1>Origin</h1></div>
             <div class="search-box"></div>
             <ul class="gnb">
                 <li class="active">Origin Access<i class="fa fa-chevron-right"></i></li>
@@ -28,7 +28,15 @@
             </div>
     </div>
     <div class="s-wrap">
-        <section class="main-img"></section>
+        <section class="main-img">
+            <div class="mySlides fade"></div>
+            <div class="mySlides fade"></div>
+            <div class="mySlides fade"></div>
+        </section>
+       
+     
+
+
         <section class="pay-page"></section>
         <section class="mostplay"></section>
         <section class="game-page"></section>
@@ -39,6 +47,22 @@
 </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+         var imgSlider = simpleslider.getSlider({
+            
+            container: document.querySelector('.main-img'),
+            prop: 'left',
+            init: 100,
+            show: 0,
+            end: -100,
+            unit: '%',
+            delay: 4,
+            duration: 2
+          
+
+        });
+    </script>
 </body>
 </html> 

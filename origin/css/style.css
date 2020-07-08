@@ -42,8 +42,14 @@ a{text-decoration: none; color: #fff;}
 
 section{box-sizing: border-box;}
 .s-wrap{box-sizing: border-box; width: 100%; height: auto; padding-left: 300px; }
-.main-img{width: 100%; height: 600px; background: orange; }
-.pay-page{width: 100%; height: 650px; background: rgb(9, 17, 22);}
+.main-img{width: 100%; height: 450px; background: orange;}
+.main-img >.mySlides:nth-child(1){width: 100%; height: 100%; background: skyblue;}
+.main-img >.mySlides:nth-child(2){width: 100%; height: 100%; background: rgb(36, 86, 105);}
+.main-img >.mySlides:nth-child(3){width: 100%; height: 100%; background: rgb(6, 42, 56);}
+
+.pay-page{width: 100%; height: 650px; background: rgb(236, 236, 236);}
 .mostplay{width: 100%; height: 1000px; background: #ddd;}
 .game-page{width: 100%; height: 1000px; background: rgb(236, 236, 236);}
 .FAQ{width: 100%; height: 1000px; background: rgb(255, 255, 255);}
+
+
