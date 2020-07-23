@@ -1,0 +1,173 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: #fff;}
+
+.wrap{
+    box-sizing: border-box;
+}
+
+.menu{
+    position: fixed;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    background: rgb(13, 32, 44);
+    text-align: center;
+}
+.center{display: flex; margin: auto; width: 90%; height: auto;}
+
+.logo{display: flex; align-items: center; width: 130px; margin: auto; color:#ddd; margin-top: 50px; font-size: 15px; }
+.logo>img{ height: 35px; }
+.logo>h1{display: inline; }
+.search-box{width: 80%; height: 50px; background: #fff; margin: auto; margin-top: 20px; border-radius: 25px;}
+
+.gnb{ margin-top: 25px; text-align: left; border-bottom: 1px solid gray; padding: 10px 0;}
+.gnb li:nth-child(1){padding: 10px ;}
+.gnb li:nth-child(2){padding: 10px;}
+.gnb li{ padding-left: 50px; line-height: 40px;  color: #ddd; transition:all 0.4s;}
+.gnb li.active{box-sizing: border-box; border-left: 5px solid rgb(255, 102, 0); padding-left: 15px; background: rgb(100, 99, 99);}
+.gnb li>i{position: absolute; right: 20px; line-height: 40px; font-size: 10px;}
+.gnb li:hover{background: rgb(60, 64, 68);}
+
+.login-box{position: absolute; width: 100%; bottom: 0;height: 170px;}
+.login{margin: auto; width: 80%; height: 50px; background: rgb(255, 102, 0); margin-bottom: 10px; border-radius: 8px; transition: all 0.3s;}
+.login:hover{background: rgb(204, 89, 12);}
+.login p{color: #fff; line-height: 50px;}
+.join{margin: auto; width: 80%; height: 50px; border: 1px solid #fff; border-radius: 8px;} 
+.join p{color: #fff; line-height: 50px;}
+
+
+.set-lang{margin: auto; border-top: 1px solid rgb(69, 83, 95); width: 80%; height: 50px; margin-top: 10px;}
+.set-lang>p{display: inline; color: #bbb; line-height: 50px;}
+.set-lang>i{color: #bbb; margin-right: 10px;}
+
+section{box-sizing: border-box;}
+.s-wrap{box-sizing: border-box; width: 100%; height: auto; padding-left: 300px; }
+.main-img{position: relative; width: 100%; height: 450px; background: orange; overflow: hidden; transition: all 0.4s;}
+.main-img:hover{box-shadow: 0px 0px 10px 0px black;}
+
+.main-img >.mySlides{overflow: hidden;}
+
+.main-img >.mySlides .slide_bg_img{ height: 100%; position: absolute; left: 50%; transform: translateX(-45%);}   
+
+.main-img >.mySlides .slide_info_banner .banner_img{display: block; float: left; margin-top: -80px; height: 150px; margin-left: 50px;}
+
+.main-img >.mySlides .slide_info_banner{position: absolute; z-index: 10; width: 100%; height: 120px; bottom: 0; background: rgba(41, 41, 56, 0.719);}
+.main-img >.mySlides .slide_info_banner .banner_txt{float: left; margin-left: 5%; width: auto;}
+.main-img >.mySlides .slide_info_banner .banner_txt h3{margin-top: 20px; color: #fff; text-transform: uppercase; font-size: 30px;}
+.main-img >.mySlides .slide_info_banner .banner_txt p{margin-top: 10px; color: rgb(212, 212, 212);}
+.main-img >.mySlides .slide_info_banner .banner_txt .pay_button{position: absolute; right: 10%; top: 45%; width: auto; height: auto;}
+.main-img >.mySlides .slide_info_banner .banner_txt .pay_button a{padding: 20px 20px; border-radius: 10px; background: rgb(255, 102, 0); transition: all 0.4s;}
+.main-img >.mySlides .slide_info_banner .banner_txt .pay_button a:hover{background: rgb(204, 89, 12);}
+.main-img >.mySlides .banner_sub_img{position:absolute; z-index: 1; right: 10%; height: 100%;}
+
+
+
+.main-img >.mySlides .slide_info_banner2{text-align: left; position: absolute;z-index: 10; left: 10%; top: 20%; width: auto; max-width: 42%;}
+.main-img >.mySlides .slide_info_banner2 .banner2_txt{width: auto;}
+.main-img >.mySlides .slide_info_banner2 .banner2_txt h3{font-size: 60px;}
+.main-img >.mySlides .slide_info_banner2 .banner2_txt p{font-size: 25px; font-weight: 100; color: rgb(83, 83, 83);}
+.main-img >.mySlides .slide_info_banner2 .banner2_txt .pay_button{margin-top: 100px;}
+.main-img >.mySlides .slide_info_banner2 .banner2_txt .pay_button a{padding: 20px 100px; border-radius: 10px; background: rgb(231, 125, 54); transition: all 0.4s; }
+.main-img >.mySlides .slide_info_banner2 .banner2_txt .pay_button a:hover{background: rgb(204, 89, 12);}
+
+
+.main-img >.mySlides:nth-child(1){width: 100%; height: 100%; background: skyblue;}
+.main-img >.mySlides:nth-child(2){width: 100%; height: 100%; background: rgb(36, 86, 105);}
+.main-img >.mySlides:nth-child(3){width: 100%; height: 100%; background: rgb(6, 42, 56);}
+
+
+
+
+.mostplay{ width: 100%; height: auto; background: rgb(240, 240, 240);}
+.mostplay_con{width: 100%; margin-top: 70px;}
+.mostplay_con > div{box-sizing: border-box; border: 1px solid re; position: relative; float: left; margin-bottom: 3%;  overflow: hidden; transition: all 0.1s;}
+.mostplay_con > div:hover{box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.582);}
+
+.mostplay_con > div:nth-child(1){width: 49%; height: 350px; background: #fff;}
+.mostplay_con > div:nth-child(2){margin-left: 2%; width: 49%; height: 350px; background: #fff;}
+.mostplay_con > div:nth-child(3){width: 49%; height: 350px; background: #fff;}
+.mostplay_con > div:nth-child(4){margin-left: 2%; width: 49%; height: 350px; background: #fff;}
+
+
+.mostplay_con>div .con_bgimg{ height: 150%; position: absolute; top: 60%; left: 50%; transform: translate(-50%, -45%);}
+
+.mostplay_con>div .game-info{position:absolute; bottom: 0;  width: 100%; height: 100px; background: rgba(41, 41, 56, 0.719);}
+.mostplay_con>div .game-info .info_img{box-sizing: border-box; float: left; width: 150px; height: 100%; }
+.mostplay_con>div .game-info .info_txt{box-sizing: border-box;  width: auto; height: 100%; }
+
+.mostplay_con>div .game-info img{ width: auto; height: 120px; margin-top: -50px; margin-left: 30px; }
+.mostplay_con>div .game-info .info_txt h3{margin-top: 10px; color: #fff; text-transform: uppercase;}
+.mostplay_con>div .game-info .info_txt p{color: #fff;}
+
+.mostplay .premier_box{width: 100%; height: 300px; background: grey;}
+.mostplay .premier_box .info_txt{width: 100%; padding-left: 2%;}
+.mostplay .premier_box .info_txt h3{font-size: 30px; font-weight: 100;}
+.mostplay .premier_box .info_txt p{font-size: 18px; font-weight: 100;}
+.mostplay .premier_box .info_txt .pay_button{float: right; margin-right: 8%; margin-top: -35px;}
+.mostplay .premier_box .info_txt .pay_button a{padding: 18px 100px; border-radius: 5px; background: rgb(231, 125, 54); transition: all 0.4s; }
+.mostplay .premier_box .info_txt .pay_button a:hover{background: rgb(204, 89, 12);}
+
+
+
+
+
+.mostplay .premier_box .premier_bgimg{ height: 100%; position: absolute; left: 50%; transform: translate( -50%);}
+
+
+
+.topgame{ background: rgb(240, 240, 240); width: 100%; height: auto;}
+.slide_List{width: 100%; padding-bottom: 60px; height: auto; overflow: hidden;}
+.slide_w{width: 5000px;}
+
+
+.slide_List_txt{margin-bottom: 20px; line-height: 50px; width: 100%; box-sizing: border-box;}
+.slide_List_txt h2{font-size: 30px; font-weight: 100; display: inline;}
+.slide_List_txt .slide_link{padding-left: 20px; font-size: 20px; color: rgb(79, 205, 255);}
+.slide_List_txt>div{float: right; margin-top: 10px;}
+.slide_List_txt .prev{margin-right: 10px;}
+.slide_List_txt .prev, .slide_List_txt .next{ background: rgb(209, 209, 209); color: #000; padding: 10px 16px; border-radius: 50%;}
+.slide_List_txt>div a:hover{background: gray;}
+
+
+.slide_List_box{float: left; display: table; width: 150px; height: auto; margin-right: 15px; transition: all 0.4s; box-shadow: 0px 0px 0px 1px rgba(126, 126, 126, 0.295);}
+
+.slide_List_box:hover{box-shadow: 0px 0px 10px 0px black;}
+
+.slide_List_game{position: relative; box-sizing: border-box; width: 100%; height: auto; background: #fff;}
+
+.slide_List_game .list_game_img{box-sizing: border-box;}
+.slide_List_game  img{display: block; width: 100%; height: auto;}
+
+
+
+.list_game_info{box-sizing: border-box; padding: 10px; position: relative; width: 150px;  height: 100px; background: #fff;}
+.list_game_info p{font-size: 14px; margin-bottom: 20px;}
+.list_game_info span{ color: rgb(255, 102, 0);}
+
+
+.slide_List_game span{position: absolute; display: block; width: 100%; height: 100%; left: 0; top: 0;  text-align: center; transition: all 0.4s;}
+
+.slide_List_game span a{position: absolute; top: 55%; left: 50%; transform: translate(-50% ,-50%); background: orange; color: #fff; font-size: 15px; padding: 0%; width: 120px; line-height: 50px; border-radius: 5px; transition: all 0.7s; opacity: 0;}
+
+.slide_List_game:hover span{background: rgba(0, 0, 0, 0.445);}
+.slide_List_game:hover span a{top: 50%; opacity: 1; }
+.slide_List_game span a:hover{background: black;}
+
+
+
+
+footer{display: flex; box-sizing: border-box; padding-top: 60px; padding-bottom: 50px; padding-left: 40px; padding-right: 40px; width: 100%; height: auto; background: #fff;}
+footer .footer_txt{flex-grow: 1; padding-right:36px;width: 25%; height: auto;}
+
+
+footer .footer_txt .sel_box_txt{font-size: 12px; padding: 10px 0; font-weight: bold;}
+footer .footer_txt .sel_box{position: relative; width: 100%; border:1px solid gray; border-radius: 5px; box-sizing: border-box; padding: 2px 2px; height: 40px;}
+footer .footer_txt .sel_box select{position: absolute; margin-top: 1px; width: 99%; padding: 7px 0; outline: none; border: 0;}
+footer .footer_txt .sel_box i{position: absolute; font-size: 20px; margin-top: 8px; padding-left: 10px;}
+
+footer .footer_txt ul li{padding: 6px 0; font-size: 14px; color: rgb(88, 88, 88);}
+
+footer .footer_txt .web_copy{margin-top: 10px; padding: 10px 0; font-size: 14px;}
+footer .footer_txt .web_info{font-size: 14px; padding-bottom: 12px;}
+footer .footer_txt .web_num{font-size: 14px;}
