@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7b3294b62f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style1.css">
     <title>Slider</title>
 </head>
@@ -13,13 +14,20 @@
 <div class="wrap">
     <div class="menu">
             <div class="logo"><img src="img/origin.png"><h1>Origin</h1></div>
-            <div class="search-box"></div>
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-box" value="" placeholder="게임 등 검색">
+
             <ul class="gnb">
                 <li class="active">Origin Access<i class="fa fa-chevron-right"></i></li>
                 <li>스토어</li>
                 <li>게임 검색<i class="fa fa-chevron-right"></i></li>
                 <li>특별 할인<i class="fa fa-chevron-right"></i></li>
             </ul>
+            <div class="sub_tag">
+                <span>정보</span><b>·</b>
+                <span>다운로드</span><b>·</b>
+                <span>도움말</span>
+            </div>
             <div class="login-box">
                <div>
                     <div class="login"><p>로그인</p></div>
@@ -29,40 +37,52 @@
             </div>
     </div>
     <div class="s-wrap">
-        <section class="main-img">
-
-            <div class="mySlides fade">
-                <div class="slide_info_banner">
-                    <img class="banner_img" src="img/title_img/ce306ee5153bad2756478f741b98e968.jpg" alt="">
-                    <div class="banner_txt">
-                        <h3>스타파이터 파일럿 판타지를 즐겨보십시오</h3>
-                        <p>스타워즈: 스쿼드론을 예약 구매하고 독점 치장 아이템 보너스를 받으세요</p>
-                        <div class="pay_button"><a href="">게임 구매하기</a></div>
-                    </div>
+        <div class="slide_wrap">
+                <div class="slide_btn">
+                    <div class="slide_next"><i class="fas fa-angle-right"></i></div>
+                    <div class="slide_prev"><i class="fas fa-angle-left"></i></div>
                 </div>
-                <img class="slide_bg_img" src="img/title_img/original(9).jpg" alt="">
-            </div> -->
+            <section class="main-img">
+                
+                <div class="mySlides fade">
+                    <div class="slide_info_banner">
+                        <img class="banner_img" src="img/title_img/ce306ee5153bad2756478f741b98e968.jpg" alt="">
+                        <div class="banner_txt">
+                            <h3>스타파이터 파일럿 판타지를 즐겨보십시오</h3>
+                            <p>스타워즈: 스쿼드론을 예약 구매하고 독점 치장 아이템 보너스를 받으세요</p>
+                            <div class="pay_button"><a href="">게임 구매하기</a></div>
+                        </div>
+                    </div>
+                    <img class="slide_bg_img" src="img/title_img/original(9).jpg" alt="">
+                </div> -->
 
-            <div class="mySlides fade">
-                <img class="slide_bg_img" src="img/title_img/original(2).jpg" alt="">
-            </div>
+                <div class="mySlides fade">
+                    <img class="slide_bg_img" src="img/title_img/original(2).jpg" alt="">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img class="banner_sub_img" src="img/title_img/original(5).png" alt="">
+                    <div class="slide_info_banner2">
+                        
+                        <div class="banner2_txt">
+                            <h3>시즌5 플레이</h3>
+                            <p>로바가 Apex 레전드 시즌5 - 포춘스 페이버 게임에 등장합니다.</p>
+                            <div class="pay_button"><a href="">게임 구매하기</a></div>
+                        </div>
+                    </div>
+                    <img class="slide_bg_img" src="img/title_img/original(4).jpg" alt="">
+                </div>
             
-            <div class="mySlides fade">
-                <img class="banner_sub_img" src="img/title_img/original(5).png" alt="">
-                <div class="slide_info_banner2">
-                    
-                    <div class="banner2_txt">
-                        <h3>시즌5 플레이</h3>
-                        <p>로바가 Apex 레전드 시즌5 - 포춘스 페이버 게임에 등장합니다.</p>
-                        <div class="pay_button"><a href="">게임 구매하기</a></div>
-                    </div>
-                </div>
-                <img class="slide_bg_img" src="img/title_img/original(4).jpg" alt="">
-            </div>
-        </section>
-       
-   
+            </section>
+        </div>
+
+     
         <section class="mostplay">
+            <ul class="indicator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
             <div class="center">
                 <div class="mostplay_con">
                     <div>
@@ -146,34 +166,12 @@
                     <div class="slide_w">
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/0.jpg" alt="">
-                            <span><a href="">더 알아보기</a></span>
-                        </div>
-                        <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
-                        </div>
-                    </div>
-
-                    <div class="slide_List_box">
-                        <div class="slide_List_game">
-                                <img src="img/list_game/-.jpg" alt="">
-                            <span><a href="">더 알아보기</a></span>
-                        </div>
-                        <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
-                        </div>
-                    </div>
-
-                    <div class="slide_List_box">
-                        <div class="slide_List_game">
                                 <img src="img/list_game/1.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>로켓 아레나</h5>
+                            <span>&#8361; 36,000</span>
                         </div>
                     </div>
 
@@ -183,8 +181,10 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4</h5>
+
+                            <p>Included <br><b style="font-size: 13px; color: rgb(255, 102, 0);">width</b><img src="img/origin.png" alt="">&nbsp;&nbsp;&nbsp;<b>access</b></p>
+                            <b>또는 &#8361; 38,500</b> 
                         </div>
                     </div>
 
@@ -194,8 +194,9 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4 에코 라이프</h5>
+                            <p>&#8361; 33,750</p><b style="color: rgb(47, 182, 130); font-size: 14px;">25% 할인</b> 
+                            <b style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 45,500</del></b>
                         </div>
                     </div>
 
@@ -205,8 +206,9 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4 마법의 나라</h5>
+                            <p>&#8361; 11,750</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 23,500</del></span> 
                         </div>
                     </div>
 
@@ -216,8 +218,8 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>스타워즈: 스쿼드론 예약 구매 에디션</h5>
+                            <span>&#8361; 47,000</span>
                         </div>
                     </div>
 
@@ -227,8 +229,8 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>EA SPORTS™ FIFA 21 얼티밋 에디션</h5>
+                            <span>&#8361; 116,000</span>
                         </div>
                     </div>
 
@@ -238,8 +240,8 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>Madden NFL 21: MVP 에디션</h5>
+                            <span>&#8361; 116,000</span>
                         </div>
                     </div>
 
@@ -249,18 +251,146 @@
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>로켓 아레나 Mythic 에디션</h5>
+                            <span>&#8361; 47,000</span>
                         </div>
                     </div>
-                    
-                  
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/9.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>커맨드 앤 컨커 리마스터 컬렉션</h5>
+                            <span>&#8361; 24,000</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/10.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 캠핑을 떠나요</h5>
+                            <p>&#8361; 11,750</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 23,500</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/11.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Apex 레전드</h5>
+                            <span style="color: rgb(46, 190, 94);">무료</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/12.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>FIFA 포인트 2,200</h5>
+                            <span>&#8361; 23,000</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/13.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 고양이와 강아지</h5>
+                            <p>&#8361; 19,250</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 38,500</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/14.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 사계절 이야기</h5>
+                            <p>&#8361; 19,250</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 38,500</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/15.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>스타워즈 제다이: 오더의 몰락™</h5>
+                            <span>&#8361; 52,800</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/16.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>STAR WARS™ Battlefront™ II </h5>
+                            <span>&#8361; 47,000</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/17.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Battlefield™ V 2년 차 에디션</h5>
+                            <span>&#8361; 72,000</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/18.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 뱀파이어</h5>
+                            <p>&#8361; 11,750</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 23,500</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game/19.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 빨래하는 날 아이템팩</h5>
+                            <p>&#8361; 5,500</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 11,000</del></span>
+                        </div>
+                    </div>
+
                     </div>
                 </div>
             </div>
+            <ul class="indicator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
-
-       
 
         <section class="topgame">
             <div class="center">
@@ -274,121 +404,239 @@
                         </div>
                         
                     </div>
+
                     <div class="slide_w">
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/0.jpg" alt="">
+                                <img src="img/list_game2/1.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>Apex 레전드™ 라이프라인 & 블러드하운드</h5>
+                            <p>&#8361; 30,550</p><b style="color: rgb(46, 190, 94); font-size: 14px;">35% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 47,000</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/-.jpg" alt="">
+                                <img src="img/list_game2/2.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4 캠퍼스 라이프</h5>
+                            <p>&#8361; 22,500</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 45,000</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/1.jpg" alt="">
+                                <img src="img/list_game2/3.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4 아일랜드 라이프</h5>
+                            <p>&#8361; 22,500</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 45,000</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/2.jpg" alt="">
+                                <img src="img/list_game2/4.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4 육아 일기</h5>
+                            <p>&#8361; 11,750</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 23,500</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/3.jpg" alt="">
+                                <img src="img/list_game2/5.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>Apex 레전드™ 패스파인더 에디션</h5>
+                            <span>&#8361; 24,000</span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/4.jpg" alt="">
+                                <img src="img/list_game2/6.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>Battlefield V 프리미엄 스타터 팩</h5>
+                            <span>&#8361; 38,000</span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/5.jpg" alt="">
+                                <img src="img/list_game2/7.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>The Sims™ 4 모두 함께 놀아요</h5>
+                            <p>&#8361; 19,750</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 38,500</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/6.jpg" alt="">
+                                <img src="img/list_game2/8.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>Apex 레전드™ - 라이프라인 에디션</h5>
+                            <p>&#8361; 15,600</p><b style="color: rgb(46, 190, 94); font-size: 14px;">35% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 24,000</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/7.jpg" alt="">
+                                <img src="img/list_game2/9.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
-                            <span>&#8361; 38,500</span>
+                            <h5>식물 vs. 좀비™: 네이버빌의 대난투 - 스타 </h5>
+                            <span>&#8361; 9,000</span>
+                        </div>
+                    </div> -->
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/10.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Apex 레전드™ - 옥테인 에디션</h5>
+                            <p>&#8361; 15,600</p><b style="color: rgb(46, 190, 94); font-size: 14px;">35% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 24,000</del></span>
                         </div>
                     </div>
 
                     <div class="slide_List_box">
                         <div class="slide_List_game">
-                                <img src="img/list_game/8.jpg" alt="">
+                                <img src="img/list_game2/11.jpg" alt="">
                             <span><a href="">더 알아보기</a></span>
                         </div>
                         <div class="list_game_info">
-                            <p>Battlefield™ 1 Shortcut 키트</p>
+                            <h5>STAR WARS™ Battlefront™ II: 크리</h5>
+                            <span>&#8361; 22,213</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/12.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Need for Speed™ Heat 디럭스 에디션 </h5>
+                            <span>&#8361; 11,000</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/13.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 시끌벅적 도시 생활</h5>
+                            <p>&#8361; 19,250</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 38,500</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/14.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Battlefield™ V - Battlefield 화폐 2200</h5>
+                            <span>&#8361; 22,123</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/15.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 나의 첫 반려동물 아이템팩</h5>
+                            <p>&#8361; 5,500</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 11,000</del></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/16.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 토들러 아이템팩</h5>
+                            <p>&#8361; 5,500</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 11,000</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/17.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Anthem™ 2,200 샤드 팩</h5>
+                            <span>&#8361; 22,213</span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/18.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>The Sims™ 4 즐거운 볼링 아이템팩</h5>
+                            <p>&#8361; 5,500</p><b style="color: rgb(46, 190, 94); font-size: 14px;">50% 할인</b> 
+                            <span style="font-size: 14px; position: unset; color: gray;"><del>&#8361; 11,000</del></span>
+                        </div>
+                    </div>
+
+                    <div class="slide_List_box">
+                        <div class="slide_List_game">
+                                <img src="img/list_game2/19.jpg" alt="">
+                            <span><a href="">더 알아보기</a></span>
+                        </div>
+                        <div class="list_game_info">
+                            <h5>Battlefield™ 1 Shortcut 키트</h5>
                             <span>&#8361; 38,500</span>
                         </div>
                     </div>
-                    
+
+
                   
                     </div>
                 </div>
             </div>
+            <ul class="indicator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
 
         <footer>
@@ -406,23 +654,21 @@
                     <li>사용자 계약</li>
                     <li>기업 정보</li>
                     <li>개인정보 및 쿠기 정책 (개인정보 보호 권리)</li>
-                    <li>쿠키 설정</li>
                 </ul>
             </div>
             <div class="footer_txt">
                <div class="sel_box_txt">언어</div>
                <div class="sel_box">
                    <select name="" id="">
+                        <option label="한국어" value="string:ko-kr" selected="selected">한국어</option>
                         <option label="Dansk" value="string:da-dk">Dansk</option>
+                        <option label="English" value="string:en-us">English</option>
                    </select>
                    <span><i class="fas fa-globe-americas"></i></span>
                </div>
                <p class="web_copy">© 2020 Electronic Arts Inc.</p>
-               <p class="web_info">Seller: EA Swiss Sàrl, Place du Molard 8, 1204, Geneva, Switzerland. Geneva Companies Registry에 등록. 기업등록번호: CH-660-2328005-8. VAT 등록에 대한 자세한 설명은 여기를 참고해 주십시오.</p>
+               <p class="web_info">Seller: EA Swiss Sàrl, Place du Molard 8, 1204, Geneva, Switzerland. Geneva Companies Registry에 등록. 기업등록번호: CH-660-2328005-8. VAT 등록에 대한 자세한 설명은 <em>여기</em>를 참고해 주십시오.</p>
                <p class="web_num">Origin v10.4.74-2401-08009552</p>
-
-
-
             </div>
             
         </footer>
