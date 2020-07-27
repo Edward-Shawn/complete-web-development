@@ -38,13 +38,10 @@
     </div>
     <div class="s-wrap">
         <div class="slide_wrap">
-                <div class="slide_btn">
-                    <div class="slide next"><i class="fas fa-angle-right"></i></div>
-                    <div class="slide prev"><i class="fas fa-angle-left"></i></div>
-                </div>
+                
             <section class="main-img">
                 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="slide_info_banner">
                         <img class="banner_img" src="img/title_img/ce306ee5153bad2756478f741b98e968.jpg" alt="">
                         <div class="banner_txt">
@@ -53,14 +50,14 @@
                             <div class="pay_button"><a href="">게임 구매하기</a></div>
                         </div>
                     </div>
-                    <img class="slide_bg_img" src="img/title_img/original(9).jpg" alt="">
-                </div> -->
+                    <img src="img/title_img/original(9).jpg" alt="">
+                </div>
 
-                <div class="mySlides fade">
-                    <img class="slide_bg_img" src="img/title_img/original(2).jpg" alt="">
+                <div class="mySlides">
+                    <img src="img/title_img/original(2).jpg" alt="">
                 </div>
                 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <img class="banner_sub_img" src="img/title_img/original(5).png" alt="">
                     <div class="slide_info_banner2">
                         
@@ -70,19 +67,25 @@
                             <div class="pay_button"><a href="">게임 구매하기</a></div>
                         </div>
                     </div>
-                    <img class="slide_bg_img" src="img/title_img/original(4).jpg" alt="">
+                    <img src="img/title_img/original(4).jpg" alt="">
                 </div>
             
             </section>
+
+            <div class="slide_btn">
+                <a href="" class="slide next"><i class="fas fa-angle-right"></i></a>
+                <a href="" class="slide prev"><i class="fas fa-angle-left"></i></a>
+            </div>
+
         </div>
 
      
         <section class="mostplay">
-            <ul class="indicator">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
+
+            <div class="slideshow-indicator">
+                <a href="#"></a>
+            </div>
+
             <div class="center">
                 <div class="mostplay_con">
                     <div>
@@ -677,19 +680,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-         var imgSlider = simpleslider.getSlider({
-            
-            container: document.querySelector('.main-img'),
-            prop: 'left',
-            init: 100,
-            show: 0,
-            end: -100,
-            unit: '%',
-            delay: 4,
-            duration: 2
-        });
-    </script>
+    <!-- <script src="js/custom.js"></script> -->
+    
 </body>
 </html> 
