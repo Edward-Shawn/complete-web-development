@@ -6,12 +6,13 @@ a{text-decoration: none; color: #fff;}
     box-sizing: border-box;
 }
 
+
 .menu{
     position: fixed;
-    max-width: 300px;
+    max-width: 301px;
     width: 100%;
     height: 100%;
-    background: rgb(29, 40, 46);
+    background: rgb(28, 50, 61);
     text-align: center;
     z-index: 999;
 }
@@ -55,42 +56,30 @@ section{box-sizing: border-box;}
 
 .s-wrap{box-sizing: border-box; width: 100%; height: auto; padding-left: 300px; }
 /*최상위*/
-.slide_wrap{position: relative; width: 100%; overflow: hidden;  box-sizing: border-box;  height: 450px; transition: all 0.4s;}
+.slide_wrap{position: relative; width: 100%; height: auto; _overflow: hidden;  height: auto; transition: all 0.4s; background: rgb(240, 240, 240);}
  /* 슬라이드 그룹 */
-.main-img{position: absolute; width: 100%; height: 100%;  }
-/* 슬라이드 */
-.main-img >.mySlides{position: absolute; width: 100%; height: 100%; overflow: hidden;}
 
-.mySlides img{ height: 100%; position: absolute; left: 50%; transform: translateX(-45%);}
+.banner_txt{position: absolute; padding-left: 100px; width: 100%; height: 150px; background: rgba(34, 34, 34, 0.712); bottom: 0; color: #fff;}
+.banner_txt h3{margin-top: 20px; font-size: 35px; font-weight: 300;}
+.banner_txt p{margin-top: 5px; font-size: 15px; color: #eee;}
+.banner_info{float: left; margin-top: -50px; margin-right: 20px; width: 95px;  height: 159px;background-image: url(../img/title_img/ce306ee5153bad2756478f741b98e968.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;}
 
-.mySlides:nth-child(1){left: 0;}
-.mySlides:nth-child(2){left: 100%;}
-.mySlides:nth-child(3){left: 200%;}
+.banner2_txt{float: left; margin-top: 150px; width: 600px; margin-left: 120px;  box-sizing: border-box;}
+.banner2_txt h3{margin-top: 20px; font-size: 70px; }
+.banner2_txt p{margin-top: 5px; font-size: 23px; font-weight: 300;}
 
-
-.slide_wrap:hover{box-shadow: 0px 0px 10px 0px black;}
-
-
-.main-img >.mySlides .slide_info_banner .banner_img{display: block; float: left; margin-top: -80px; height: 150px; margin-left: 50px;}
-
-.main-img >.mySlides .slide_info_banner{position: absolute; z-index: 10; width: 100%; height: 120px; bottom: 0; background: rgba(41, 41, 56, 0.719);}
-.main-img >.mySlides .slide_info_banner .banner_txt{float: left; margin-left: 5%; width: auto;}
-.main-img >.mySlides .slide_info_banner .banner_txt h3{margin-top: 20px; color: #fff; text-transform: uppercase; font-size: 30px;}
-.main-img >.mySlides .slide_info_banner .banner_txt p{margin-top: 10px; color: rgb(212, 212, 212);}
-.main-img >.mySlides .slide_info_banner .banner_txt .pay_button{position: absolute; right: 10%; top: 45%; width: auto; height: auto;}
-.main-img >.mySlides .slide_info_banner .banner_txt .pay_button a{padding: 20px 20px; border-radius: 10px; background: rgb(255, 102, 0); transition: all 0.4s;}
-.main-img >.mySlides .slide_info_banner .banner_txt .pay_button a:hover{background: rgb(204, 89, 12);}
-.main-img >.mySlides .banner_sub_img{position:absolute; z-index: 1; right: 10%; height: 100%;}
+.banner_info2{float: right; margin-right: 150px;width: 600px;  height: 100%; background: url(../img/title_img/original\(5\).png); background-position: center; background-size: contain; background-repeat: no-repeat;}
 
 
 
-.main-img >.mySlides .slide_info_banner2{text-align: left; position: absolute;z-index: 10; left: 10%; top: 20%; width: auto; max-width: 42%;}
-.main-img >.mySlides .slide_info_banner2 .banner2_txt{width: auto;}
-.main-img >.mySlides .slide_info_banner2 .banner2_txt h3{font-size: 60px;}
-.main-img >.mySlides .slide_info_banner2 .banner2_txt p{font-size: 25px; font-weight: 100; color: rgb(83, 83, 83);}
-.main-img >.mySlides .slide_info_banner2 .banner2_txt .pay_button{margin-top: 100px;}
-.main-img >.mySlides .slide_info_banner2 .banner2_txt .pay_button a{padding: 20px 100px; border-radius: 10px; background: rgb(231, 125, 54); transition: all 0.4s; }
-.main-img >.mySlides .slide_info_banner2 .banner2_txt .pay_button a:hover{background: rgb(204, 89, 12);}
+
+.pay_button{margin-left: 1100px; margin-top: -40px;}
+.pay_button a{padding: 20px 100px; border-radius: 8px; background: rgb(248, 151, 5); transition: all 0.4s;}
+.pay_button a:hover{background: rgb(219, 135, 10);}
+
+.pay_button2{margin-top: 50px;}
+.pay_button2 a{padding: 20px 100px; border-radius: 8px; background: rgb(248, 151, 5); transition: all 0.4s;}
+.pay_button2 a:hover{background: rgb(219, 135, 10);}
 
 
 
@@ -100,12 +89,12 @@ section{box-sizing: border-box;}
 .slide_btn>div{position: relative; top: 50%; cursor: pointer;}
 
 
-.slideshow-indicator{width: 100%; height: 50px;  text-align: center;}
+.slideshow-indicator{width: 100%; height: 50px; padding-top: 20px; text-align: center;}
 .slideshow-indicator a{display: inline-block;  width: 8px; height: 8px; border: 1px solid gray; border-radius: 5px; cursor: pointer; margin: 0 5px;}
 .slideshow-indicator a.active{position: relative; top: 2px; background: rgb(255, 138, 4); width: 8px; height: 8px;  border-radius: 8px; border: 3px solid rgb(255, 138, 4);}
 
 .mostplay{ width: 100%; height: auto; background: rgb(240, 240, 240);}
-.mostplay_con{width: 100%; margin-top: 70px;}
+.mostplay_con{width: 100%; margin-top: 50px;}
 .mostplay_con > div{box-sizing: border-box; position: relative; float: left; margin-bottom: 3%;  overflow: hidden; transition: all 0.4s;}
 .mostplay_con > div:hover{box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.582);}
 
